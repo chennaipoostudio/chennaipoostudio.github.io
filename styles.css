@@ -291,8 +291,13 @@ body {
    About Section
    ======================================== */
 .about {
-    padding: 6rem 0;
-    background: var(--white);
+    /*padding: 30rem 0;
+    background: (--white);*/
+
+     position: relative;
+  padding: 100px 20px;
+  background: #ffffff;
+  z-index: 2;
 }
 
 .section-title {
@@ -570,10 +575,12 @@ body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(107, 125, 92, 0.2);
+    
 }
 
 .slide {
     display: none;
+    width: 100%;
     position: relative;
 }
 
@@ -582,10 +589,9 @@ body {
 }
 
 .slide img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
+ width: 100%;
+  aspect-ratio: 4 / 5; /* best for flowers */
+  object-fit: cover;
 }
 
 .slide-caption {
