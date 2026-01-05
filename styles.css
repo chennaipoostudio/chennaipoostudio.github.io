@@ -291,13 +291,8 @@ body {
    About Section
    ======================================== */
 .about {
-    /*padding: 30rem 0;
-    background: (--white);*/
-
-     position: relative;
-  padding: 100px 20px;
-  background: #ffffff;
-  z-index: 2;
+    padding: 25rem 0;
+    background: (--white);
 }
 
 .section-title {
@@ -589,9 +584,10 @@ body {
 }
 
 .slide img {
- width: 100%;
-  aspect-ratio: 4 / 5; /* best for flowers */
-  object-fit: cover;
+   width: 100%;
+    aspect-ratio: 4 / 5; /* PERFECT for flowers */
+    object-fit: cover;
+    display: block;
 }
 
 .slide-caption {
@@ -697,6 +693,9 @@ body {
    Responsive Design
    ======================================== */
 @media (max-width: 768px) {
+    .slide img {
+        aspect-ratio: 3 / 4;
+    }
     .hero-title {
         font-size: 2.5rem;
     }
@@ -751,6 +750,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .slide img {
+        aspect-ratio: 1 / 1;
+    }
     .hero-title {
         font-size: 2rem;
     }
@@ -769,6 +771,6 @@ body {
     }
     
     .about, .contact {
-        padding: 4rem 0;
+        padding: 22rem 0;
     }
 }
